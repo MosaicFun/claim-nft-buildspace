@@ -1,0 +1,12 @@
+[
+  {
+    "name": "NFT 1",
+    "description": "Remember to replace this description",
+    "image": "ipfs://NewUriToReplace/1.png"
+  },
+  {
+    "name": "NFT 2",
+    "description": "Remember to replace this description",
+    "image": "ipfs://NewUriToReplace/2.png"
+  }
+]
