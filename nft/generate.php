@@ -4,7 +4,7 @@ error_reporting(0);
 
 $nfts = [];
 
-for ($i = 701; $i <= 1200; $i++) {
+for ($i = 3251; $i <= 4000; $i++) {
 	$nft = [
 		"name" => "Special mosaic buildspace drop #" . $i,
 		"description" => "Journey into the Mosaicverse.",
