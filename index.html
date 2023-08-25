@@ -72,6 +72,19 @@
   </div>
 </div>
 
+<script>
+    // Get a reference to the existing image element
+    const oldImage = document.querySelector('.h-full.w-full.object-cover');
+
+    // Create a new image element
+    const newImage = document.createElement('img');
+    newImage.className = 'h-full w-full object-cover';
+    newImage.src = 'buildspaces4w2_.png';  // Replace 'new-image.jpg' with your new image URL
+    newImage.alt = 'New Image';
+
+    // Replace the old image with the new one
+    oldImage.parentNode.replaceChild(newImage, oldImage);
+</script>
 
 </body>
 </html>

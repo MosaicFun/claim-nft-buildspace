@@ -4,10 +4,10 @@ error_reporting(0);
 
 $nfts = [];
 
-for ($i = 1; $i <= 200; $i++) {
+for ($i = 701; $i <= 1200; $i++) {
 	$nft = [
-		"name" => "Mosaic X buildspace #" . $i,
-		"description" => "Mosaic alpha drop celebrating buildpspace n&w s4 week 2",
+		"name" => "Special mosaic buildspace drop #" . $i,
+		"description" => "Journey into the Mosaicverse.",
 //		"image" => "https://buildspace.mosaic.fun/nft/drop/buildspaces4w2_" . $i . ".png"
 	];
 	$nfts[] = $nft;
