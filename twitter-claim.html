@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css"/>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -12,6 +12,26 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
   <title>Mosaic - Claim your loyalty rewards</title>
+
+  <!-- Matomo -->
+  <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+          var u = "//matomo.meierij.it/";
+          _paq.push(['setTrackerUrl', u + 'matomo.php']);
+          _paq.push(['setSiteId', '2']);
+          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+          g.async = true;
+          g.src = u + 'matomo.js';
+          s.parentNode.insertBefore(g, s);
+      })();
+  </script>
+  <noscript><p><img src="//matomo.meierij.it/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt=""/></p></noscript>
+  <!-- End Matomo Code -->
+
 </head>
 <body>
 
@@ -64,7 +84,8 @@
             Follow @mosaicdrops
           </button>
           <div id="step2" class=" text-white" style="display: none;">Step 2 of 3</div>
-          <button id="likeButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4" onclick="like();" style="display: none;">
+          <button id="likeButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4" onclick="like();"
+                  style="display: none;">
             Like this tweet
           </button>
 
@@ -96,55 +117,57 @@
     </div>
   </div>
 
-<div class="">
-  <h2 class="mt-10 text-4xl font-bold tracking-tight text-indigo-600 sm:text-3xl text-center">Our previous drops</h2>
-  <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-20">
-    <div class="card card-compact w-96 bg-base-100 shadow-xl ">
-      <figure><img src="nft/buildspaces4w2_.png" alt="Shoes" /></figure>
-      <div class="card-body">
-        <h2 class="card-title">Special mosaic buildspace drop</h2>
-        <p>Journey into the Mosaicverse. </p>
-        <div class="justify-end card-actions">
-          <span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+  <div class="">
+    <h2 class="mt-10 text-4xl font-bold tracking-tight text-indigo-600 sm:text-3xl text-center">Our previous drops</h2>
+    <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-20">
+      <div class="card card-compact w-96 bg-base-100 shadow-xl ">
+        <figure><img src="nft/buildspaces4w2_.png" alt="Shoes"/></figure>
+        <div class="card-body">
+          <h2 class="card-title">Special mosaic buildspace drop</h2>
+          <p>Journey into the Mosaicverse. </p>
+          <div class="justify-end card-actions">
+          <span
+              class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
             1500 Dropped
           </span>
-          <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+            <span
+                class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
             Closed
           </span>
-        </div>
+          </div>
 
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-  <script>
-      function follow() {
-          window.open("https://twitter.com/intent/follow?follow=mosaicdrops&screen_name=mosaicdrops", "_blank");
-          setTimeout(function() {
-              document.getElementById('likeButton').style.display = 'block';
-              document.getElementById('step2').style.display = 'block';
-          }, 1000);
-      }
+<script>
+    function follow() {
+        window.open("https://twitter.com/intent/follow?follow=mosaicdrops&screen_name=mosaicdrops", "_blank");
+        setTimeout(function () {
+            document.getElementById('likeButton').style.display = 'block';
+            document.getElementById('step2').style.display = 'block';
+        }, 1000);
+    }
 
-      function like() {
-          window.open("https://twitter.com/intent/like?tweet_id=1694484706123743605", "_blank");
-          setTimeout(function() {
-              document.getElementById('hiddenElement').style.display = 'block';
-              document.getElementById('step3').style.display = 'block';
+    function like() {
+        window.open("https://twitter.com/intent/like?tweet_id=1694484706123743605", "_blank");
+        setTimeout(function () {
+            document.getElementById('hiddenElement').style.display = 'block';
+            document.getElementById('step3').style.display = 'block';
 
-          }, 1000);
-      }
+        }, 1000);
+    }
 
-      function retweet() {
-          window.open("https://twitter.com/intent/retweet?tweet_id=1694484706123743605", "_blank");
-          setTimeout(function() {
-              document.getElementById('nextHiddenElement').style.display = 'block';
-              document.getElementById('step4').style.display = 'block';
+    function retweet() {
+        window.open("https://twitter.com/intent/retweet?tweet_id=1694484706123743605", "_blank");
+        setTimeout(function () {
+            document.getElementById('nextHiddenElement').style.display = 'block';
+            document.getElementById('step4').style.display = 'block';
 
-          }, 1000);
-      }
-  </script>
+        }, 1000);
+    }
+</script>
 
 </body>
 </html>
