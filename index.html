@@ -14,24 +14,26 @@
   <title>Mosaic - Claim your loyalty rewards</title>
 
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.meierij.it/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//matomo.meierij.it/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+  <!-- Matomo -->
+  <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+          var u = "//matomo.meierij.it/";
+          _paq.push(['setTrackerUrl', u + 'matomo.php']);
+          _paq.push(['setSiteId', '2']);
+          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+          g.async = true;
+          g.src = u + 'matomo.js';
+          s.parentNode.insertBefore(g, s);
+      })();
+  </script>
+  <noscript><p><img src="//matomo.meierij.it/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt=""/></p></noscript>
+  <!-- End Matomo Code -->
 
- 
+
 </head>
 <body>
 
@@ -78,25 +80,27 @@
                 aria-hidden="true">→</span></a>
         </div>
         <div class="pt-10">
-          <div id="step1" class=" text-white">Step 1 of 3</div>
+          <div id="step1" class="pb-1 text-white">Step 1 of 2</div>
 
           <button id="followButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4" onclick="follow();">
             Follow @mosaicdrops
           </button>
-          <div id="step2" class=" text-white" style="display: none;">Step 2 of 3</div>
-          <button id="likeButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4" onclick="like();"
-                  style="display: none;">
-            Like this tweet
-          </button>
+          <!--          <div id="step2" class=" text-white" style="display: none;">Step 2 of 3</div>-->
+          <!--          <button id="likeButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4" onclick="like();"-->
+          <!--                  style="display: none;">-->
+          <!--            Like this tweet-->
+          <!--          </button>-->
 
-        </div>
-        <div id="step3" class=" text-white" style="display: none;">Step 3 of 3</div>
 
-        <div id="hiddenElement" style="display: none;">
-          <button id="retweetButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4"
-                  onClick="retweet();">
-            Retweet to unlock
-          </button>
+          <div id="likeButton" style="display: none;">
+            <div class="text-white pb-1" id="step2">
+              Step 2 of 2
+            </div>
+            <button id="retweetButton" class="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4"
+                    onClick="retweet();">
+              Repost to unlock
+            </button>
+          </div>
         </div>
       </div>
       <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
@@ -107,7 +111,7 @@
               <iframe
                   class="rounded-xl shadow-lg "
                   src="https://embed.ipfscdn.io/ipfs/bafybeigtqeyfmqkfbdu7ubjlwhtqkdqckvee7waks4uwhmzdfvpfaqzdwm/erc1155.html?contract=0x07651181EEC2E978cA46E49b9b7B4FB6aD1e0342&chain=%7B%22name%22%3A%22OP+Mainnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Foptimism.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22oeth%22%2C%22chainId%22%3A10%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22optimism%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9%2Foptimism%2F512.png%22%2C%22height%22%3A512%2C%22width%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=daccaa8a7f8c9bc62c9eeecc7aa994ac&tokenId=0&theme=dark&primaryColor=purple"
-                  style="max-width:100%; min-width: 450px ; height: 900px;"
+                  style="max-width:100%; min-width: 450px ; height: 700px;"
                   frameborder="0"
               ></iframe>
             </div>
